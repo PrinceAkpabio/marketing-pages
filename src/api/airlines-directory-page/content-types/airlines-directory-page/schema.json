@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "airlines_directory_pages",
+  "info": {
+    "singularName": "airlines-directory-page",
+    "pluralName": "airlines-directory-pages",
+    "displayName": "airlines-directory-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "intro_header": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "popular_airlines_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "international_airlines_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "international_airlines": {
+      "type": "component",
+      "component": "shared.airline-card",
+      "repeatable": true
+    },
+    "local_airlines_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "local_airlines": {
+      "type": "component",
+      "component": "shared.airline-card",
+      "repeatable": true
+    },
+    "region_tab": {
+      "type": "component",
+      "component": "airline.region-tab",
+      "repeatable": true
+    }
+  }
+}

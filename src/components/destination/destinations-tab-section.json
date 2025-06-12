@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_destination_destinations_tab_sections",
+  "info": {
+    "displayName": "destinations-tab-section",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "tab_type": {
+      "type": "enumeration",
+      "enum": [
+        "city",
+        "country"
+      ]
+    },
+    "destinations": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_destination_deal_entries",
+  "info": {
+    "displayName": "deal-entry",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "airline": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::airline.airline"
+    },
+    "flight_route": {
+      "type": "string"
+    },
+    "trip_type": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "price_label": {
+      "type": "string"
+    },
+    "book_now_url": {
+      "type": "string"
+    },
+    "book_now_label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

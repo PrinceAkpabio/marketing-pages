@@ -1,0 +1,170 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "singularName": "destination",
+    "pluralName": "destinations",
+    "displayName": "destination"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "country",
+        "city"
+      ]
+    },
+    "airlines": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::airline.airline",
+      "inversedBy": "destinations"
+    },
+    "intro_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "why_visit_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "why_visit_articles": {
+      "type": "component",
+      "component": "shared.related-article",
+      "repeatable": true
+    },
+    "content_tabs": {
+      "type": "component",
+      "component": "shared.content-tab",
+      "repeatable": true
+    },
+    "hot_flight_deals_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "hot_flight_deals": {
+      "type": "component",
+      "component": "destination.deal-entry",
+      "repeatable": true
+    },
+    "cheap_flights_from_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "cheap_flights_from": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    },
+    "cheap_flights_to_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "cheap_flights_to": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    },
+    "hotel_deals_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "hotel_deals": {
+      "type": "component",
+      "component": "destination.hotel-deal-entry",
+      "repeatable": true
+    },
+    "popular_destinations_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "popular_destinations": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    },
+    "things_to_do_in_city_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "top_attractions_landmarks_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "top_attractions_landmarks_articles": {
+      "type": "component",
+      "component": "shared.related-article",
+      "repeatable": true
+    },
+    "beaches_outdoor_activities_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "beaches_outdoor_activities_articles": {
+      "type": "component",
+      "component": "shared.related-article",
+      "repeatable": true
+    },
+    "shopping_markets_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "shopping_markets_articles": {
+      "type": "component",
+      "component": "shared.related-article",
+      "repeatable": true
+    },
+    "entertainment_nightlife_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "entertainment_nightlife_articles": {
+      "type": "component",
+      "component": "shared.related-article",
+      "repeatable": true
+    },
+    "popular_country_airlines_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "popular_country_airlines": {
+      "type": "component",
+      "component": "shared.airline-card",
+      "repeatable": true
+    },
+    "popular_country_hotels_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "popular_country_hotels": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    }
+  }
+}

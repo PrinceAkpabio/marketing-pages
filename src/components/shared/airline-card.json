@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_airline_cards",
+  "info": {
+    "displayName": "airline-card",
+    "icon": "plane"
+  },
+  "options": {},
+  "attributes": {
+    "airline": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::airline.airline"
+    },
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

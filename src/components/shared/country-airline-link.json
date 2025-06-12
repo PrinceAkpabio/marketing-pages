@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_country_airline_links",
+  "info": {
+    "displayName": "country-airline-link",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "airlines": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::airline.airline"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_airline_region_tabs",
+  "info": {
+    "displayName": " region-tab",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "region": {
+      "type": "string"
+    },
+    "country_airline_links": {
+      "type": "component",
+      "component": "shared.country-airline-link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_destination_cards",
+  "info": {
+    "displayName": "destination-card",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "destination": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::destination.destination"
+    },
+    "title": {
+      "type": "string"
+    },
+    "flag": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "is_city": {
+      "type": "boolean"
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

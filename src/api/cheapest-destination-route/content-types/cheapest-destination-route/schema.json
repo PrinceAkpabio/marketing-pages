@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cheapest_destination_routes",
+  "info": {
+    "singularName": "cheapest-destination-route",
+    "pluralName": "cheapest-destination-routes",
+    "displayName": "cheapest-destination-route"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cheapest_flights_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "cheapest_flights_deals": {
+      "type": "component",
+      "component": "destination.deal-entry",
+      "repeatable": true
+    },
+    "popular_airlines_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "popular_airlines": {
+      "type": "component",
+      "component": "shared.airline-card",
+      "repeatable": true
+    },
+    "popular_routes_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "popular_routes": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    },
+    "traveling_tips_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "traveling_tips": {
+      "type": "component",
+      "component": "shared.faq",
+      "repeatable": true
+    },
+    "faq_section": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "faqs": {
+      "type": "component",
+      "component": "shared.faq",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_destination_destination_groups",
+  "info": {
+    "displayName": "destination-group",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "intro_paragraph": {
+      "type": "text"
+    },
+    "countries": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    },
+    "cities": {
+      "type": "component",
+      "component": "shared.destination-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

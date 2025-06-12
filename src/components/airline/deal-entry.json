@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_airline_deal_entries",
+  "info": {
+    "displayName": "deal-entry",
+    "icon": "shoppingCart"
+  },
+  "options": {},
+  "attributes": {
+    "airline": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::airline.airline"
+    },
+    "from": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "book_now_url": {
+      "type": "string"
+    },
+    "price_label": {
+      "type": "string"
+    },
+    "book_now_label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

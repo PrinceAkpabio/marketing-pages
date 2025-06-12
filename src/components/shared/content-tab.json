@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_content_tabs",
+  "info": {
+    "displayName": "content-tab",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "tab_title": {
+      "type": "string"
+    },
+    "intro_paragraph": {
+      "type": "text"
+    },
+    "bullet_points": {
+      "type": "blocks"
+    },
+    "content_links": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

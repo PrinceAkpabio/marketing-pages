@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "destinations_directory_pages",
+  "info": {
+    "singularName": "destinations-directory-page",
+    "pluralName": "destinations-directory-pages",
+    "displayName": "destinations-directory-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "intro_header": {
+      "type": "component",
+      "component": "shared.header-paragraph",
+      "repeatable": false
+    },
+    "tab_section": {
+      "type": "component",
+      "component": "destination.destinations-tab-section",
+      "repeatable": true
+    }
+  }
+}

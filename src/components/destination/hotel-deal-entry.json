@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_destination_hotel_deal_entries",
+  "info": {
+    "displayName": "hotel-deal-entry",
+    "icon": "house"
+  },
+  "options": {},
+  "attributes": {
+    "hotel_label": {
+      "type": "string"
+    },
+    "room_type_label": {
+      "type": "string"
+    },
+    "room_type": {
+      "type": "enumeration",
+      "enum": [
+        "Single room",
+        "Standard double room",
+        "Standard twin room",
+        "Deluxe room",
+        "Deluxe double room",
+        "Studio room or apartment",
+        "Junior suite",
+        "Executive suite",
+        "Presidential suite"
+      ]
+    },
+    "bed_type_label": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "pay_small_small_amount": {
+      "type": "decimal"
+    },
+    "see_availability_url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

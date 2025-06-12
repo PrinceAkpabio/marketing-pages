@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_header_paragraphs",
+  "info": {
+    "displayName": "header-paragraph",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "paragraph": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

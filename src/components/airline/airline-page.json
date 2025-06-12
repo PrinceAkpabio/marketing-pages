@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_airline_airline_pages",
+  "info": {
+    "displayName": "airline-page",
+    "icon": "paperPlane"
+  },
+  "options": {},
+  "attributes": {
+    "intro_title": {
+      "type": "string"
+    },
+    "intro_paragraph": {
+      "type": "blocks"
+    },
+    "hot_deals": {
+      "type": "component",
+      "component": "airline.deal-entry",
+      "repeatable": true
+    },
+    "popular_routes": {
+      "type": "component",
+      "component": "airline.deal-entry",
+      "repeatable": true
+    },
+    "content_tabs": {
+      "type": "component",
+      "component": "shared.content-tab",
+      "repeatable": true
+    },
+    "airline_destinations": {
+      "type": "component",
+      "component": "destination.destination-group",
+      "repeatable": false
+    },
+    "related_airlines": {
+      "type": "component",
+      "component": "shared.airline-card",
+      "repeatable": true
+    },
+    "related_articles": {
+      "type": "component",
+      "component": "shared.related-article",
+      "repeatable": true
+    },
+    "related_faqs": {
+      "type": "component",
+      "component": "shared.faq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
